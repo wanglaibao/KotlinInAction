@@ -34,5 +34,8 @@ fun main(args: Array<String>) {
     }
 
     // repeat statement
-    repeat(1000) {println("金戈")}
+    repeat(100) {
+        println("金戈")
+        daysOfWeek.forEach{day -> println(day)}
+    }
 }
