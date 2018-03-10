@@ -30,6 +30,13 @@ class KotlinBasicTest {
 	}
 
 	@Test
+	fun testPrintSum(){
+		val a = 100
+		val b = 200
+		printSum(a,b)
+	}
+
+	@Test
 	fun testStream() {
 		val daysOfWeek = listOf("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
 		daysOfWeek.filter {
@@ -71,4 +78,8 @@ class KotlinBasicTest {
 	}
 
 	fun sum(a:Int,b:Int) = a + b
+
+	fun printSum(a: Int, b: Int): Unit {
+		println("sum of $a and $b is ${a + b}")
+	}
 }
