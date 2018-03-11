@@ -13,3 +13,12 @@ Kotlin is a language that aims to be a better version of Java,so it's a good cho
 * 互操作的
 
 ## 3: How Kotlin improve the usage of existed Java libraries,especially Java Collection FrameWork.【It too important】
+
+Kotlin has a feature called Extension Functions which enables Kotlin Standard Library (stdlib) to extend functionality of JDK’s classes. 
+For instance, if you open _Collections.kt file from stdlib you can find many methods similar to this:
+
+`
+public inline fun <T> Iterable<T>.filter(predicate: (T) -> Boolean): List<T> {
+    return filterTo(ArrayList<T>(), predicate)
+}
+`
